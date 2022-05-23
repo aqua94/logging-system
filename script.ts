@@ -2,7 +2,6 @@ import { LoggingSystem, storages, transports } from "./logging-system";
 
 const system = new LoggingSystem("LoggingSystem");
 const logger = system.createLogger("logger", { a: 1 });
-logger.setConsole();
 
 document.addEventListener("DOMContentLoaded", () => {
   const infoButton = document.querySelector("#info");
